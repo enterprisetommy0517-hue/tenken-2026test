@@ -1,14 +1,7 @@
-{
-  "name": "tenken-work",
-  "version": "0.1.0",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "15.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  }
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="ja">
+      <body>{children}</body>
+    </html>
+  )
 }
